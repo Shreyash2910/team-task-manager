@@ -9,7 +9,7 @@ import {
 
 // --- RAILWAY CONFIGURATION ---
 // Ek hi baar URL define karo, har function mein likhne ki zaroorat nahi
-const API_BASE_URL = 'https://aapka-backend-railway-link.up.railway.app/api';
+const API_BASE_URL = 'https://team-task-manager-production-e916.up.railway.app/api';
 
 const api = axios.create({
     baseURL: API_BASE_URL,
