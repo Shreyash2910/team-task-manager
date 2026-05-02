@@ -1,7 +1,3 @@
-Here’s a cleaner, more **professional GitHub README** version of your project 👇
-
----
-
 # 🚀 NexusTask — Full-Stack Team Task Manager
 
 NexusTask is a modern **MERN Stack** application designed to streamline team collaboration and task management. It offers role-based access control, real-time insights, and a sleek futuristic UI for an efficient workflow experience.
