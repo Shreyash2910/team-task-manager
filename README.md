@@ -117,7 +117,11 @@ npm start
 
 ## 👨‍💻 Author
 
-**Shreyash**
+**Shreyash Srivastava**
 🔗 GitHub: [https://github.com/Shreyash2910/](https://github.com/Shreyash2910/)
+
+**Akriti Maddhesiya**
+🔗 GitHub: [https://github.com/Akriti135/](https://github.com/Akriti135)
+
 
 
