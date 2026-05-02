@@ -110,16 +110,6 @@ Update API base URL in `Dashboard.js`, then run:
 npm start
 ```
 
----
-
-## 📸 Screenshots
-
-| Dashboard Overview                                                        |
-| ![Dashboard](<img width="1899" height="623" alt="Screenshot 2026-05-02 231801" src="https://github.com/user-attachments/assets/d82abfd2-2662-4995-8def-ef62b3a67a0f" />) | ![Mission](<img width="1898" height="904" alt="Screenshot 2026-05-02 231732" src="https://github.com/user-attachments/assets/1121d994-9943-4daa-9f97-446270bc6d58" />
-) |
-
----
-
 ## 📌 Project Highlights
 
 * Clean and scalable architecture
