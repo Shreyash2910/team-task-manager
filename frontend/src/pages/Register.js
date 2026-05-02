@@ -6,10 +6,14 @@ const Register = () => {
     const [formData, setFormData] = useState({ name: '', email: '', password: '' });
     const navigate = useNavigate();
 
+    // Tumhari Nayi Railway Backend Link
+    const BACKEND_URL = 'https://team-task-manager-production-e916.up.railway.app';
+
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/auth/register', formData);
+            // Localhost ko hata kar Railway URL se replace kar diya hai
+            await axios.post(`${BACKEND_URL}/api/auth/register`, formData);
             alert('Registration Successful! Ab login karein.');
             navigate('/'); // Login page par bhej dega
         } catch (err) {
@@ -23,17 +27,23 @@ const Register = () => {
                 <h2 className="text-3xl font-black mb-6 text-center text-slate-800">Create Account</h2>
 
                 <input
-                    type="text" placeholder="Full Name" required
+                    type="text"
+                    placeholder="Full Name"
+                    required
                     className="w-full p-3 mb-4 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
                 <input
-                    type="email" placeholder="Email Address" required
+                    type="email"
+                    placeholder="Email Address"
+                    required
                     className="w-full p-3 mb-4 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
                 <input
-                    type="password" placeholder="Password" required
+                    type="password"
+                    placeholder="Password"
+                    required
                     className="w-full p-3 mb-6 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
                     onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                 />

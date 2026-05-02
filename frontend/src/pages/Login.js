@@ -8,18 +8,20 @@ const Login = () => {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
+    // Tumhari Nayi Railway Backend Link
+    const BACKEND_URL = 'https://team-task-manager-production-e916.up.railway.app';
+
     const handleLogin = async (e) => {
         e.preventDefault();
         setLoading(true);
         try {
-            // 1. Backend API Call
-            const res = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+            // 1. Backend API Call (Localhost ko Railway URL se replace kiya)
+            const res = await axios.post(`${BACKEND_URL}/api/auth/login`, { email, password });
 
-            // 2. LocalStorage mein data save karna (Sabse zaroori step)
-            // res.data mein wahi fields honi chahiye jo backend bhej raha hai
+            // 2. LocalStorage mein data save karna
             localStorage.setItem('token', res.data.token);
-            localStorage.setItem('role', res.data.role);      // Isi se Admin form dikhega
-            localStorage.setItem('userName', res.data.userName); // Welcoming text ke liye
+            localStorage.setItem('role', res.data.role);
+            localStorage.setItem('userName', res.data.userName);
 
             // 3. Dashboard par bhej dena
             navigate('/dashboard');
